@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Fontes</title>
+    <link>https://jp-guimaraes.github.io/slides_clonagem/home/</link>
+    <description>Recent content in Homes on Fontes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jp-guimaraes.github.io/slides_clonagem/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_clonagem/home/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_clonagem/home/intro/</guid>
+      <description> Objetivos Conhecer o procedimento de clonagem de discos e volumes e quando aplica-lo
+Entender a diferença entre cópia e clonagem entre discos e volumes
+Saber criar arquivos clones de discos e volumes
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_clonagem/home/clonagem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_clonagem/home/clonagem/</guid>
+      <description>Relembrando Arquivos no disco
+Clusters
+ Arquivos no disco hexdump &amp;lt;opção&amp;gt; nome_do_arquivo Exemplo
+hexdump -C imagem.png Arquivos teste
+Leitura complementar
+ Arquivos mais complexos
+Cabeçalhos nos arquivos para guardar metadados
+Exemplo 1: Arquivo de música WAV
+Meta dados: Artist Album Track title Genre Album artwork Track number + Número de canais, Sample rate, byterate, bits per sample, etc
+Exemplo 2: Imagem; Tamanho da imagem, color depth, etc
+Vídeo complementar</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_clonagem/home/ferramentas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_clonagem/home/ferramentas/</guid>
+      <description> Ferramentas Gparted
+Clonezilla
+dd
+foremost
+ Relembrando linux
+Arquivos no /dev/
+Partições estendidas -&amp;gt; numeradas de 5 a 16
+Podem pontos de montagens diferentes
+Exemplo: /, /dev/, /usr
+  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jp-guimaraes.github.io/slides_clonagem/home/tutoriais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jp-guimaraes.github.io/slides_clonagem/home/tutoriais/</guid>
+      <description> Clonagem Tutorial
+ Recuperação de arquivos Tutorial
+Slides
+  </description>
+    </item>
+    
+  </channel>
+</rss>

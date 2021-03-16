@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.68.3" />
+    <meta charset="utf-8">
+<title>Clonagem de discos</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/slides_clonagem/reveal-js/css/reset.css">
+<link rel="stylesheet" href="/slides_clonagem/reveal-js/css/reveal.css"><link rel="stylesheet" href="/slides_clonagem/robot-lung.css" id="theme"><link rel="stylesheet" href="/slides_clonagem/highlight-js/color-brewer.min.css">
+    
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><h1 id="clonagem-de-volumes">Clonagem de Volumes</h1>
+<p>Organização e Manutenção de Computadores</p>
+<p><a href="https://jp-guimaraes.github.io/">🌐 João Paulo Guimarães</a></p>
+</section>
+
+  
+
+    <section>
+
+<section data-shortcode-section>
+<h1 id="objetivos">Objetivos</h1>
+<p>Conhecer o procedimento de clonagem de discos e volumes e quando aplica-lo</p>
+<p>Entender a diferença entre cópia e clonagem entre discos e volumes</p>
+<p>Saber criar arquivos clones de discos e volumes</p>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="relembrando">Relembrando</h1>
+<p>Arquivos no disco</p>
+<p>Clusters</p>
+</section><section>
+<h1 id="arquivos-no-disco">Arquivos no disco</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>hexdump &lt;opção&gt; nome_do_arquivo
+</code></pre></div><p>Exemplo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape>hexdump -C imagem.png
+</code></pre></div><p><a href="https://file-examples.com/">Arquivos teste</a></p>
+<p><a href="https://krazydad.com/fieldguidetofiles.php">Leitura complementar</a></p>
+</section><section>
+<p>Arquivos mais complexos</p>
+<p>Cabeçalhos nos arquivos para guardar <strong>metadados</strong></p>
+<p>Exemplo 1: Arquivo de música WAV</p>
+<p>Meta dados:
+Artist
+Album
+Track title
+Genre
+Album artwork
+Track number
++
+Número de canais, Sample rate, byterate, bits per sample, etc</p>
+<p>Exemplo 2: Imagem; Tamanho da imagem, color depth, etc</p>
+<p><a href="https://www.youtube.com/watch?v=KN8YgJnShPM&amp;t=31s">Vídeo complementar</a></p>
+</section><section>
+<h1 id="cluster">Cluster</h1>
+<p><img src="https://www.datarecoveryunion.com/images/2015/03/disk_cluster.jpg" alt=""></p>
+</section><section>
+<h1 id="clonagem">Clonagem</h1>
+<p>O que é?</p>
+<p>Qual a diferença pra cópia?</p>
+</section><section>
+<h1 id="cenários-recomendados">Cenários recomendados</h1>
+<ul>
+<li>
+<p>Hardware iguais</p>
+</li>
+<li>
+<p>Análise e Recuperação de dados</p>
+</li>
+</ul>
+
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="ferramentas">Ferramentas</h1>
+<p><a href="https://gparted.org/display-doc.php?name=man-page">Gparted</a></p>
+<p><a href="https://clonezilla.org/">Clonezilla</a></p>
+<p><a href="https://man7.org/linux/man-pages/man1/dd.1.html">dd</a></p>
+<p><a href="https://linux.die.net/man/1/foremost">foremost</a></p>
+</section><section>
+<h1 id="relembrando">Relembrando</h1>
+<p><strong>linux</strong></p>
+<p>Arquivos no /dev/</p>
+<p>Partições estendidas -&gt; numeradas de 5 a 16</p>
+<p>Podem pontos de montagens diferentes</p>
+<p>Exemplo: /, /dev/, /usr</p>
+<section data-shortcode-section>
+</section>
+</section>
+</section>
+    <section>
+
+<section data-shortcode-section>
+<h1 id="clonagem">Clonagem</h1>
+<p><a href="https://github.com/jp-guimaraes/clonagem">Tutorial</a></p>
+</section><section>
+<h1 id="recuperação-de-arquivos">Recuperação de arquivos</h1>
+<p><a href="https://github.com/jp-guimaraes/data_recovery">Tutorial</a></p>
+<p><a href="https://jp-guimaraes.github.io/data_recovery/#/">Slides</a></p>
+<section data-shortcode-section>
+</section>
+</section>
+</section>
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/slides_clonagem/reveal-hugo/object-assign.js></script>
+
+<a href="/slides_clonagem/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/slides_clonagem/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/slides_clonagem/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/slides_clonagem/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/slides_clonagem/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/slides_clonagem/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/slides_clonagem/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+  </body>
+</html>
